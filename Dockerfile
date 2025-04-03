@@ -1,4 +1,3 @@
-
 FROM python:latest
 
 WORKDIR /app
@@ -14,4 +13,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . /app
 
-CMD python3 bot.py
+CMD gunicorn app:app & python3 bot.py
