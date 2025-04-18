@@ -223,7 +223,8 @@ async def get_user_settings(from_user, stype="main"):
 ┠ <b>UserID</b> → #ID{user_id}
 ┠ <b>Username</b> → @{from_user.username}
 ┠ <b>Telegram DC</b> → {from_user.dc_id}
-┖ <b>Telegram Lang</b> → {Language.get(lc).display_name() if (lc := from_user.language_code) else "N/A"}"""
+┠
+┖ 𝙱𝚘𝚝 𝚖𝚊𝚍𝚎 𝚋𝚢 <a href="http://t.me/The_TGguy">𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑮𝒖𝒚!!</a>"""
 
         btns = buttons.build_menu(2)
 
@@ -403,8 +404,8 @@ async def get_user_settings(from_user, stype="main"):
 ┠ Leech Caption → <code>{escape(lcap)}</code>
 ┠ Leech Destination → <code>{leech_dest}</code>
 ┠ Leech by <b>{leech_method}</b> session
-┠ Mixed Leech → <b>{hybrid_leech}</b>
-┖ Thumbnail Layout → <b>{thumb_layout}</b>
+┠
+┖ 𝙱𝚘𝚝 𝚖𝚊𝚍𝚎 𝚋𝚢 <a href="http://t.me/The_TGguy">𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑮𝒖𝒚!!</a>
 """
 
     elif stype == "rclone":
@@ -521,7 +522,8 @@ async def get_user_settings(from_user, stype="main"):
 ┠ <b>Gdrive Token</b> → <b>{tokenmsg}</b>
 ┠ <b>Gdrive ID</b> → <code>{gdrive_id}</code>
 ┠ <b>Index Link</b> → <code>{index}</code>
-┖ <b>Stop Duplicate</b> → <b>{sd_msg}</b>
+┠ <b>Stop Duplicate</b> → <b>{sd_msg}</b>
+┖ <b>Note:</b> __Add your Token Pickle or Rclone to use Mirror!__
 """
 
     elif stype == "ffset":
