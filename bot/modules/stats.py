@@ -139,40 +139,20 @@ async def get_stats(event, key="home"):
         msg = f"""⌬ <b><i>Packages Statistics :</i></b>
 │
 ┟ <b>python:</b> {bot_cache["eng_versions"]["python"]}
-┠ <b>aria2:</b> {bot_cache["eng_versions"]["aria2"]}
-┠ <b>qBittorrent:</b> {bot_cache["eng_versions"]["qBittorrent"]}
-┠ <b>SABnzbd+:</b> {bot_cache["eng_versions"]["SABnzbd+"]}
-┠ <b>rclone:</b> {bot_cache["eng_versions"]["rclone"]}
 ┠ <b>yt-dlp:</b> {bot_cache["eng_versions"]["yt-dlp"]}
-┠ <b>ffmpeg:</b> {bot_cache["eng_versions"]["ffmpeg"]}
-┠ <b>7z:</b> {bot_cache["eng_versions"]["7z"]}
-┠ <b>Aiohttp:</b> {bot_cache["eng_versions"]["aiohttp"]}
-┠ <b>Pyrofork:</b> {bot_cache["eng_versions"]["pyrofork"]}
-┠ <b>Google API:</b> {bot_cache["eng_versions"]["gapi"]}
-┖ <b>Mega SDK:</b> {bot_cache["eng_versions"]["mega"]}
+┖ <b>Bot made by</b> <a href=https://t.me/The_TGguy>Telegram Guy!!</a>
 """
     elif key == "tlimits":
         msg = f"""⌬ <b><i>Bot Task Limits :</i></b>
 │
-┟ <b>Direct Limit :</b> {Config.DIRECT_LIMIT or "∞"} GB
-┠ <b>Torrent Limit :</b> {Config.TORRENT_LIMIT or "∞"} GB
-┠ <b>GDriveDL Limit :</b> {Config.GD_DL_LIMIT or "∞"} GB
-┠ <b>RCloneDL Limit :</b> {Config.RC_DL_LIMIT or "∞"} GB
-┠ <b>Clone Limit :</b> {Config.CLONE_LIMIT or "∞"} GB
-┠ <b>JDown Limit :</b> {Config.JD_LIMIT or "∞"} GB
-┠ <b>NZB Limit :</b> {Config.NZB_LIMIT or "∞"} GB
 ┠ <b>YT-DLP Limit :</b> {Config.YTDLP_LIMIT or "∞"} GB
 ┠ <b>Playlist Limit :</b> {Config.PLAYLIST_LIMIT or "∞"}
-┠ <b>Mega Limit :</b> {Config.MEGA_LIMIT or "∞"} GB
-┠ <b>Leech Limit :</b> {Config.LEECH_LIMIT or "∞"} GB
-┠ <b>Archive Limit :</b> {Config.ARCHIVE_LIMIT or "∞"} GB
-┠ <b>Extract Limit :</b> {Config.EXTRACT_LIMIT or "∞"} GB
-┞ <b>Threshold Storage :</b> {Config.STORAGE_LIMIT or "∞"} GB
 │
 ┟ <b>Token Validity :</b> {Config.VERIFY_TIMEOUT or "Disabled"}
 ┠ <b>User Time Limit :</b> {Config.USER_TIME_INTERVAL or "0"}s / task
 ┠ <b>User Max Tasks :</b> {Config.USER_MAX_TASKS or "∞"}
-┖ <b>Bot Max Tasks :</b> {Config.BOT_MAX_TASKS or "∞"}
+┠ <b>Bot Max Tasks :</b> {Config.BOT_MAX_TASKS or "∞"}
+┖ <b>Bot made by</b> <a href=https://t.me/The_TGguy>Telegram Guy!!</a>
     """
 
     btns.data_button("Close", f"stats {user_id} close", "footer")
