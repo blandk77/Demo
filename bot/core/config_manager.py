@@ -23,10 +23,10 @@ class Config:
     MEDIA_STORE = True
     FORCE_SUB_IDS = ""
     GDRIVE_ID = ""
-    GD_DESP = "Uploaded with WZ Bot"
+    GD_DESP = "Uploaded with Telegram Guy!! Bot"
     INSTADL_API = ""
     IMDB_TEMPLATE = ""
-    INCOMPLETE_TASK_NOTIFIER = False
+    INCOMPLETE_TASK_NOTIFIER = True
     INDEX_URL = ""
     IS_TEAM_DRIVE = False
     JD_EMAIL = ""
@@ -48,7 +48,7 @@ class Config:
     ARCHIVE_LIMIT = 0
     STORAGE_LIMIT = 0
     LEECH_DUMP_CHAT = ""
-    CLEAN_LOG_MSG = False
+    CLEAN_LOG_MSG = True
     LEECH_PREFIX = ""
     LEECH_CAPTION = ""
     LEECH_SUFFIX = ""
@@ -92,7 +92,7 @@ class Config:
     USER_TIME_INTERVAL = 0
     UPLOAD_PATHS = {}
     UPSTREAM_REPO = ""
-    UPSTREAM_BRANCH = "master"
+    UPSTREAM_BRANCH = "main"
     UPDATE_PKGS = False
     USENET_SERVERS = []
     USER_SESSION_STRING = ""
